@@ -21,6 +21,7 @@ let random_from_seed n =
   Random.bits ()
 
 let random_memo = memoize random_from_seed
+
 let id : bool -> bool = fun a -> a
 let not : bool -> bool = fun a -> if a then false else true
 let const_true : bool -> bool = fun _ -> true
